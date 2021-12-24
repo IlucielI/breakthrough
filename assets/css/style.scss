@@ -1,0 +1,195 @@
+$primary-color: #00bcb2;
+$danger-color: #e66629;
+$warning-color: #ee8c2a;
+$secondary-color: #132a2a;
+
+body {
+  background-color: #070a0e;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 20px 0;
+}
+
+p {
+  font-family: "arial";
+}
+
+.btn-danger {
+  background-color: $danger-color;
+}
+.btn-outline-success {
+  color: $primary-color;
+  border-color: $primary-color;
+  &:hover {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+.card {
+  padding: 36px 24px;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #121b23;
+  transition: transform 0.25s ease 0s;
+  .container-img {
+    height: 175px;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+  .card-title {
+    color: #ffffff;
+    font-size: 25px;
+  }
+  ul {
+    li {
+      color: #c7c7c7;
+    }
+  }
+}
+
+.btn-custom {
+  background-image: linear-gradient(
+    45deg,
+    rgba(188, 110, 255, 1) 0%,
+    rgba(0, 221, 255, 1) 180%
+  );
+  padding: 16px 38px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  border-radius: 10px;
+  &:hover {
+    box-shadow: 0px 0px 30px #555;
+    color: #fff;
+  }
+}
+
+.top-page {
+  background-image: linear-gradient(to right, #3b4260 0%, #401d3b 100%);
+  .transition {
+    background-image: linear-gradient(
+      to top,
+      #070a0e 0%,
+      rgba(7, 10, 14, 0.45) 43.35%,
+      rgba(7, 10, 14, 0.1) 77.34%,
+      rgba(7, 10, 14, 0) 100%
+    );
+  }
+}
+.navbar {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $primary-color;
+        &:hover {
+          color: $danger-color;
+        }
+      }
+    }
+  }
+  .navbar-brand {
+    img {
+      @media screen and (max-width: 575px) {
+        width: 70px;
+      }
+    }
+  }
+  .navbar-toggler-icon {
+    width: fit-content;
+    height: fit-content;
+    i {
+      @media screen and (max-width: 575px) {
+        font-size: 1.2em;
+      }
+    }
+  }
+  &.show {
+    opacity: 1;
+    z-index: 1;
+    display: flex;
+    transform: translate(0, 0);
+  }
+}
+
+.jumbotron {
+  background: transparent;
+  .title-jumbotron {
+    background: -webkit-linear-gradient(
+      45deg,
+      rgba(188, 110, 255, 1) 0%,
+      rgb(29, 162, 182) 180%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  p {
+    background: -webkit-linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+
+.title-section {
+  background: -webkit-linear-gradient(
+    45deg,
+    #d4c3f4,
+    #aecdda,
+    #afdeb1,
+    #c8df9e,
+    #ecb58c,
+    #f2a380 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.p-section {
+  background: -webkit-linear-gradient(0deg, #807fbd 0%, #45a5af 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#pendaftaran {
+  .form-group {
+    label {
+      color: #ffffff;
+    }
+  }
+}
+
+.footer {
+  background: transparent;
+  .container {
+    border-top: 2px solid $primary-color;
+  }
+}
+.scroll-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  color: #fff;
+  background: rgba(90, 92, 105, 0.5);
+  line-height: 46px;
+}
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+  color: #fff;
+}
+.scroll-to-top:hover {
+  background: #5a5c69;
+}
+.scroll-to-top i {
+  font-weight: 800;
+}

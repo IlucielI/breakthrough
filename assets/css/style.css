@@ -1,0 +1,194 @@
+body {
+  background-color: #070a0e;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 20px 0;
+}
+
+p {
+  font-family: "arial";
+}
+
+.btn-danger {
+  background-color: #e66629;
+}
+
+.btn-outline-success {
+  color: #00bcb2;
+  border-color: #00bcb2;
+}
+
+.btn-outline-success:hover {
+  background-color: #00bcb2;
+  border-color: #00bcb2;
+}
+
+.card {
+  padding: 36px 24px;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #121b23;
+  -webkit-transition: -webkit-transform 0.25s ease 0s;
+  transition: -webkit-transform 0.25s ease 0s;
+  transition: transform 0.25s ease 0s;
+  transition: transform 0.25s ease 0s, -webkit-transform 0.25s ease 0s;
+}
+
+.card .container-img {
+  height: 175px;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.card .card-title {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.card ul li {
+  color: #c7c7c7;
+}
+
+.btn-custom {
+  background-image: linear-gradient(45deg, #bc6eff 0%, #00ddff 180%);
+  padding: 16px 38px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.btn-custom:hover {
+  -webkit-box-shadow: 0px 0px 30px #555;
+          box-shadow: 0px 0px 30px #555;
+  color: #fff;
+}
+
+.top-page {
+  background-image: -webkit-gradient(linear, left top, right top, from(#3b4260), to(#401d3b));
+  background-image: linear-gradient(to right, #3b4260 0%, #401d3b 100%);
+}
+
+.top-page .transition {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#070a0e), color-stop(43.35%, rgba(7, 10, 14, 0.45)), color-stop(77.34%, rgba(7, 10, 14, 0.1)), to(rgba(7, 10, 14, 0)));
+  background-image: linear-gradient(to top, #070a0e 0%, rgba(7, 10, 14, 0.45) 43.35%, rgba(7, 10, 14, 0.1) 77.34%, rgba(7, 10, 14, 0) 100%);
+}
+
+.navbar {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #00bcb2;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #e66629;
+}
+
+@media screen and (max-width: 575px) {
+  .navbar .navbar-brand img {
+    width: 70px;
+  }
+}
+
+.navbar .navbar-toggler-icon {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media screen and (max-width: 575px) {
+  .navbar .navbar-toggler-icon i {
+    font-size: 1.2em;
+  }
+}
+
+.navbar.show {
+  opacity: 1;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.jumbotron {
+  background: transparent;
+}
+
+.jumbotron .title-jumbotron {
+  background: -webkit-linear-gradient(45deg, #bc6eff 0%, #1da2b6 180%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.jumbotron p {
+  background: -webkit-linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.title-section {
+  background: -webkit-linear-gradient(45deg, #d4c3f4, #aecdda, #afdeb1, #c8df9e, #ecb58c, #f2a380 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.p-section {
+  background: -webkit-linear-gradient(0deg, #807fbd 0%, #45a5af 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#pendaftaran .form-group label {
+  color: #ffffff;
+}
+
+.footer {
+  background: transparent;
+}
+
+.footer .container {
+  border-top: 2px solid #00bcb2;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  color: #fff;
+  background: rgba(90, 92, 105, 0.5);
+  line-height: 46px;
+}
+
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+  color: #fff;
+}
+
+.scroll-to-top:hover {
+  background: #5a5c69;
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}
+/*# sourceMappingURL=style.css.map */
